@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: 244 241 237;
+  --bg-secondary: 233 228 221;
+  --surface: 255 255 255;
+  --accent: 245 130 59;
+  --accent-hover: 233 114 51;
+  --text-primary: 43 43 43;
+  --text-secondary: 111 111 111;
+  --divider: 221 214 206;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  background-color: rgb(var(--bg-primary));
+  color: rgb(var(--text-primary));
+  font-family: var(--font-inter);
+  letter-spacing: -0.01em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: rgb(var(--accent));
+  color: rgb(var(--text-primary));
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-manrope);
+    color: rgb(var(--text-primary));
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .container-base {
+    @apply mx-auto w-full max-w-[1320px] px-6 sm:px-8;
+  }
+}
