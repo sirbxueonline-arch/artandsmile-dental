@@ -66,6 +66,107 @@ const blogImages = {
   ds3: "/brand/ds3.png",
 };
 
+const servicesPageImage = "/brand/serv1.jpg";
+
+const servicesPageCategories = {
+  diaqnostika: {
+    label: "Diaqnostika",
+    items: [
+      {
+        slug: "panoram-rentgen",
+        title: "Panoram rentgen",
+        summary:
+          "Alt v\u0259 \u00fcst \u00e7\u0259n\u0259, di\u015fl\u0259r, gicgah-\u00e7\u0259n\u0259 oyna\u011f\u0131, \u00e7\u0259n\u0259alt\u0131 v\u0259 \u00fcz nahiy\u0259sind\u0259ki s\u00fcm\u00fckl\u0259rin geni\u015f sah\u0259d\u0259 g\u00f6r\u00fcnt\u00fcl\u0259nm\u0259si \u00fc\u00e7\u00fcn iki\u00f6l\u00e7\u00fcl\u00fc rentgen m\u00fcayin\u0259si.",
+        details: [
+          "Panoram rentgen alt v\u0259 \u00fcst \u00e7\u0259n\u0259, di\u015fl\u0259r, gicgah-\u00e7\u0259n\u0259 oyna\u011f\u0131 (TMJ), \u00e7\u0259n\u0259alt\u0131 v\u0259 \u00fcz nahiy\u0259sind\u0259ki s\u00fcm\u00fckl\u0259ri bir g\u00f6r\u00fcnt\u00fcd\u0259 g\u00f6st\u0259rir. H\u0259kiml\u0259r bu m\u00fcayin\u0259ni \u00fcmumi v\u0259ziyy\u0259ti qiym\u0259tl\u0259ndirm\u0259k v\u0259 diaqnoz qoymaq \u00fc\u00e7\u00fcn istifad\u0259 edirl\u0259r. Prosedur zaman\u0131 pasiyentin ba\u015f\u0131 sabitl\u0259\u015fdirilir, d\u00fczg\u00fcn yerl\u0259\u015fm\u0259 \u00fc\u00e7\u00fcn x\u00fcsusi dayaq v\u0259 plastik tutacaqdan istifad\u0259 olunur. M\u00fcayin\u0259 q\u0131sa m\u00fcdd\u0259tlidir v\u0259 a\u015fa\u011f\u0131 radiasiya il\u0259 apar\u0131l\u0131r.",
+        ],
+      },
+      {
+        slug: "sefalometrik-rentgen",
+        title: "Sefalometrik rentgen",
+        summary:
+          "Ortodontik m\u00fcalic\u0259 planlamas\u0131 \u00fc\u00e7\u00fcn ba\u015f v\u0259 \u00e7\u0259n\u0259nin yan g\u00f6r\u00fcnt\u00fcs\u00fcn\u00fc \u00e7\u0259k\u0259n x\u00fcsusi rentgen n\u00f6v\u00fc. Bu m\u00fcayin\u0259 \u00e7\u0259n\u0259 b\u00f6y\u00fcm\u0259 istiqam\u0259tini v\u0259 di\u015f d\u00fcz\u00fcl\u00fc\u015f\u00fcnd\u0259ki anomaliyalar\u0131 d\u0259qiq \u015f\u0259kild\u0259 m\u00fc\u0259yy\u0259n edir.",
+        details: [
+          "Sefalometrik rentgen ba\u015f skeletinin yan proyeksiyada \u00e7\u0259kil\u0259n iki\u00f6l\u00e7\u00fcl\u00fc g\u00f6r\u00fcnt\u00fcs\u00fcd\u00fcr. \u018fsas\u0259n ortodontiya v\u0259 \u00e7\u0259n\u0259-\u00fcz c\u0259rrahiyy\u0259sind\u0259 \u00f6l\u00e7m\u0259l\u0259r aparmaq v\u0259 m\u00fcalic\u0259 plan\u0131n\u0131 haz\u0131rlamaq \u00fc\u00e7\u00fcn istifad\u0259 olunur. \u00c7\u0259kili\u015f zaman\u0131 pasiyentin ba\u015f\u0131 x\u00fcsusi d\u0259st\u0259k vasit\u0259sil\u0259 sabitl\u0259nir v\u0259 n\u0259tic\u0259l\u0259r r\u0259q\u0259msal \u015f\u0259kild\u0259 analiz edilir.",
+        ],
+      },
+      {
+        slug: "cbct",
+        title: "3D Tomoqrafiya (CBCT)",
+        summary:
+          "\u00c7\u0259n\u0259, di\u015fl\u0259r, a\u011f\u0131z bo\u015flu\u011fu v\u0259 \u00fcz skeletinin \u00fc\u00e7\u00f6l\u00e7\u00fcl\u00fc g\u00f6r\u00fcnt\u00fcs\u00fcn\u00fc \u0259ld\u0259 etm\u0259y\u0259 imkan ver\u0259n y\u00fcks\u0259k d\u0259qiqlikli v\u0259 a\u015fa\u011f\u0131 radiasiyal\u0131 rentgen m\u00fcayin\u0259 \u00fcsuludur.",
+        details: [
+          "CBCT (Cone Beam Computed Tomography) m\u00fcasir 3D g\u00f6r\u00fcnt\u00fcl\u0259m\u0259 \u00fcsuludur. \u0130mplant planla\u015fd\u0131rmas\u0131, \u00e7\u0259n\u0259 patologiyalar\u0131, g\u00f6m\u00fcl\u00fc v\u0259 ya anormal yerl\u0259\u015fmi\u015f di\u015fl\u0259rin t\u0259hlili, k\u00f6k kanallar\u0131n\u0131n formas\u0131 v\u0259 sin\u00fcs nahiy\u0259sinin qiym\u0259tl\u0259ndirilm\u0259si \u00fc\u00e7\u00fcn geni\u015f istifad\u0259 olunur. Prosedur q\u0131sa m\u00fcdd\u0259t \u00e7\u0259kir v\u0259 al\u0131nan g\u00f6r\u00fcnt\u00fcl\u0259r y\u00fcks\u0259k d\u0259qiqlikl\u0259 t\u0259hlil edilir.",
+        ],
+      },
+    ],
+  },
+  gigiyena: {
+    label: "Gigiyena",
+    items: [
+      {
+        slug: "professional-cleaning",
+        title: "Di\u015fl\u0259rin professional t\u0259mizl\u0259nm\u0259si",
+        summary:
+          "Di\u015f da\u015f\u0131 v\u0259 bakterial plaqlar\u0131n tam t\u0259mizl\u0259nm\u0259si \u00fc\u00e7\u00fcn pe\u015f\u0259kar prosedurdur. Bu xidm\u0259t di\u015f \u0259ti x\u0259st\u0259likl\u0259rinin qar\u015f\u0131s\u0131n\u0131n al\u0131nmas\u0131 v\u0259 a\u011f\u0131z gigiyenas\u0131n\u0131n optimal s\u0259viyy\u0259d\u0259 saxlanmas\u0131 \u00fc\u00e7\u00fcn m\u00fctl\u0259q z\u0259ruridir.",
+        details: [
+          "Professional t\u0259mizl\u0259m\u0259 zaman\u0131 di\u015fl\u0259rin s\u0259thind\u0259 y\u0131\u011f\u0131lan s\u0259rt v\u0259 yum\u015faq \u00e7\u00f6k\u00fcnt\u00fcl\u0259r x\u00fcsusi al\u0259tl\u0259r vasit\u0259sil\u0259 t\u0259mizl\u0259nir, daha sonra di\u015fl\u0259r cilalan\u0131r. Bu prosedur di\u015f \u0259ti iltihab\u0131n\u0131n azalmas\u0131na, xo\u015fag\u0259lm\u0259z qoxunun aradan qalxmas\u0131na v\u0259 estetik g\u00f6r\u00fcn\u00fc\u015f\u00fcn yax\u015f\u0131la\u015fmas\u0131na k\u00f6m\u0259k edir. Stomatoloqlar ild\u0259 1-2 d\u0259f\u0259 pe\u015f\u0259kar t\u0259mizl\u0259m\u0259ni t\u00f6vsiy\u0259 edirl\u0259r.",
+        ],
+      },
+      {
+        slug: "air-flow",
+        title: "Air-Flow il\u0259 t\u0259mizl\u0259m\u0259",
+        summary:
+          "Y\u00fcks\u0259k t\u0259zyiqli hava, su v\u0259 x\u00fcsusi toz qar\u0131\u015f\u0131\u011f\u0131 il\u0259 di\u015fl\u0259rin yum\u015faq \u0259rp, piqment l\u0259k\u0259l\u0259ri v\u0259 bakterial t\u0259b\u0259q\u0259d\u0259n z\u0259r\u0259rsiz \u015f\u0259kild\u0259 t\u0259mizl\u0259nm\u0259si.",
+        details: [
+          "Air-Flow metodunda x\u00fcsusi hava-su qar\u0131\u015f\u0131\u011f\u0131 v\u0259 toz hiss\u0259cikl\u0259ri di\u015f s\u0259thin\u0259 y\u00f6n\u0259ldil\u0259r\u0259k piqment l\u0259k\u0259l\u0259rini (\u00e7ay, kofe, siqaret v\u0259 s.) v\u0259 yum\u015faq \u0259rpi \u00e7\u0131xar\u0131r. Bu \u00fcsul di\u015f minas\u0131na v\u0259 di\u015f \u0259tin\u0259 z\u0259r\u0259r verm\u0259d\u0259n t\u0259mizl\u0259m\u0259 apar\u0131r v\u0259 breket, implant v\u0259 protezl\u0259rin \u0259traf\u0131nda da effektivdir. Prosedur tez v\u0259 a\u011fr\u0131s\u0131zd\u0131r.",
+        ],
+      },
+      {
+        slug: "scaler-cleaning",
+        title: "Scaler il\u0259 di\u015f t\u0259mizl\u0259m\u0259",
+        summary:
+          "Ultras\u0259s texnologiyas\u0131 il\u0259 di\u015fl\u0259rd\u0259ki s\u0259rt \u00e7\u00f6k\u00fcnt\u00fcl\u0259rin v\u0259 di\u015f da\u015flar\u0131n\u0131n effektiv \u015f\u0259kild\u0259 t\u0259mizl\u0259nm\u0259si proseduru.",
+        details: [
+          "Ultras\u0259s scaler cihaz\u0131 di\u015f da\u015flar\u0131n\u0131 titr\u0259m\u0259 v\u0259 su il\u0259 yum\u015faldaraq par\u00e7alay\u0131r v\u0259 t\u0259mizl\u0259yir. Bu prosedur di\u015f \u0259ti x\u0259st\u0259likl\u0259rinin profilaktikas\u0131 \u00fc\u00e7\u00fcn vacibdir v\u0259 di\u015fl\u0259rin s\u0259thini t\u0259miz saxlay\u0131r. \u018fks\u0259r hallarda polisaj (cilalama) il\u0259 tamamlan\u0131r v\u0259 di\u015f \u0259tl\u0259rinin sa\u011flaml\u0131\u011f\u0131n\u0131 yax\u015f\u0131la\u015fd\u0131r\u0131r.",
+        ],
+      },
+    ],
+  },
+  estetik: {
+    label: "Estetik stomatologiya",
+    items: [
+      {
+        slug: "ev-seraitinde-agardilma",
+        title: "Ev \u015f\u0259raitind\u0259 di\u015fl\u0259rin a\u011fard\u0131lmas\u0131",
+        summary:
+          "F\u0259rdi haz\u0131rlanm\u0131\u015f qapaqlar v\u0259 pe\u015f\u0259kar a\u011fard\u0131c\u0131 gel vasit\u0259sil\u0259 ev \u015f\u0259raitind\u0259 t\u0259hl\u00fck\u0259siz v\u0259 effektiv di\u015f a\u011fartma proseduru.",
+        details: [
+          "Bu prosedur stomatoloqun haz\u0131rlad\u0131\u011f\u0131 f\u0259rdi qapaqlar v\u0259 a\u011fard\u0131c\u0131 gel il\u0259 evd\u0259 h\u0259yata ke\u00e7irilir. Pasiyent h\u0259kimin g\u00f6st\u0259ri\u015fl\u0259rin\u0259 uy\u011fun olaraq qapaqlar\u0131 m\u00fc\u0259yy\u0259n m\u00fcdd\u0259t g\u00fcnd\u0259lik istifad\u0259 edir v\u0259 n\u0259tic\u0259 t\u0259dric\u0259n \u0259ld\u0259 olunur. Ev \u015f\u0259raitind\u0259 a\u011fard\u0131lma daha yum\u015faq t\u0259sir g\u00f6st\u0259rir v\u0259 di\u015fl\u0259rin r\u0259ngini t\u0259hl\u00fck\u0259siz \u015f\u0259kild\u0259 a\u00e7\u0131r.",
+        ],
+      },
+      {
+        slug: "klinikada-agardilma",
+        title: "Klinikada di\u015fl\u0259rin a\u011fard\u0131lmas\u0131",
+        summary:
+          "Pe\u015f\u0259kar avadanl\u0131qlar v\u0259 y\u00fcks\u0259k konsentrasiyal\u0131 a\u011fard\u0131c\u0131 madd\u0259l\u0259rl\u0259 klinik \u015f\u0259raitd\u0259 apar\u0131lan s\u00fcr\u0259tli v\u0259 effektiv di\u015f a\u011fartma proseduru.",
+        details: [
+          "Klinik a\u011fard\u0131lma m\u00fcayin\u0259d\u0259n sonra di\u015f \u0259tl\u0259rinin qorunmas\u0131 v\u0259 a\u011fard\u0131c\u0131 gelin t\u0259tbiqi il\u0259 h\u0259yata ke\u00e7irilir. Gel x\u00fcsusi lampa v\u0259 ya lazer il\u0259 aktivl\u0259\u015fdiril\u0259r\u0259k q\u0131sa m\u00fcdd\u0259td\u0259 daha parlaq n\u0259tic\u0259 verir. Prosedur ad\u0259t\u0259n 30-60 d\u0259qiq\u0259 \u00e7\u0259kir v\u0259 h\u0259kim n\u0259zar\u0259ti alt\u0131nda apar\u0131ld\u0131\u011f\u0131 \u00fc\u00e7\u00fcn t\u0259hl\u00fck\u0259sizdir.",
+        ],
+      },
+      {
+        slug: "dis-viniri",
+        title: "Di\u015f viniri",
+        summary:
+          "Di\u015fl\u0259rin \u00f6n s\u0259thin\u0259 t\u0259tbiq olunan inc\u0259 qatl\u0131 keramik v\u0259 ya kompozit \u00f6rt\u00fckl\u0259r. Di\u015fl\u0259rin forma, r\u0259ng v\u0259 \u00f6l\u00e7\u00fcs\u00fcn\u00fc d\u0259yi\u015fdir\u0259r\u0259k m\u00fck\u0259mm\u0259l g\u00fcl\u00fc\u015f estetikas\u0131 yarad\u0131r.",
+        details: [
+          "Di\u015f vinirl\u0259ri estetik probleml\u0259ri aradan qald\u0131rmaq \u00fc\u00e7\u00fcn di\u015fl\u0259rin \u00f6n s\u0259thin\u0259 yerl\u0259\u015fdiril\u0259n nazik \u00f6rt\u00fckl\u0259rdir. R\u0259ng d\u0259yi\u015fiklikl\u0259ri, aral\u0131qlar, \u00e7atlar v\u0259 forma pozuntular\u0131 vinir vasit\u0259sil\u0259 d\u00fcz\u0259ldil\u0259 bil\u0259r. Minimal m\u00fcdaxil\u0259 il\u0259 t\u0259bii g\u00f6r\u00fcn\u00fc\u015f \u0259ld\u0259 olunur v\u0259 d\u00fczg\u00fcn qulluqla uzunm\u00fcdd\u0259tli n\u0259tic\u0259 verir.",
+        ],
+      },
+    ],
+  },
+} as const;
+
 export const content = {
   az: {
     navLinks: [
@@ -91,25 +192,25 @@ export const content = {
           {
             title: "Diaqnostika",
             items: [
-              "Panoram rentgen",
-              "Sefalometrik rentgen",
-              "3D tomoqrafiya (CBCT)",
+              { label: "Panoram rentgen", href: "/services/diaqnostika/panoram-rentgen" },
+              { label: "Sefalometrik rentgen", href: "/services/diaqnostika/sefalometrik-rentgen" },
+              { label: "3D tomoqrafiya (CBCT)", href: "/services/diaqnostika/cbct" },
             ],
           },
           {
             title: "Gigiyena",
             items: [
-              "Di\u015fl\u0259rin professional t\u0259mizl\u0259nm\u0259si",
-              "Air-Flow il\u0259 t\u0259mizl\u0259m\u0259",
-              "Scaler il\u0259 di\u015f t\u0259mizl\u0259m\u0259",
+              { label: "Di\u015fl\u0259rin professional t\u0259mizl\u0259nm\u0259si", href: "/services/gigiyena/professional-cleaning" },
+              { label: "Air-Flow il\u0259 t\u0259mizl\u0259m\u0259", href: "/services/gigiyena/air-flow" },
+              { label: "Scaler il\u0259 di\u015f t\u0259mizl\u0259m\u0259", href: "/services/gigiyena/scaler-cleaning" },
             ],
           },
           {
             title: "Estetik stomatologiya",
             items: [
-              "Ev \u015f\u0259raitind\u0259 di\u015fl\u0259rin a\u011fard\u0131lmas\u0131",
-              "Klinikada di\u015fl\u0259rin a\u011fard\u0131lmas\u0131",
-              "Di\u015f viniri",
+              { label: "Ev \u015f\u0259raitind\u0259 di\u015fl\u0259rin a\u011fard\u0131lmas\u0131", href: "/services/estetik/ev-seraitinde-agardilma" },
+              { label: "Klinikada di\u015fl\u0259rin a\u011fard\u0131lmas\u0131", href: "/services/estetik/klinikada-agardilma" },
+              { label: "Di\u015f viniri", href: "/services/estetik/dis-viniri" },
             ],
           },
         ],
@@ -215,6 +316,15 @@ export const content = {
         "\u0130ngilis v\u0259 rus dill\u0259rind\u0259 xidm\u0259t",
       ],
       cta: "Beyn\u0259lxalq konsultasiya",
+    },
+    servicesPages: {
+      image: servicesPageImage,
+      detailsTitle: "Xidm\u0259t haqq\u0131nda",
+      breadcrumb: {
+        home: "Ana s\u0259hif\u0259",
+        services: "Xidm\u0259tl\u0259r",
+      },
+      categories: servicesPageCategories,
     },
     statement: {
       text: "G\u00fcl\u00fc\u015f, insan\u0131n sa\u011flam v\u0259 estetik di\u015fl\u0259rl\u0259 d\u0259st\u0259kl\u0259n\u0259n \u0259n g\u00f6z\u0259l nax\u0131\u015f\u0131d\u0131r",
@@ -513,19 +623,27 @@ export const content = {
         groups: [
           {
             title: "Diagnostics",
-            items: ["Panoramic X-ray", "Cephalometric X-ray", "3D CBCT scan"],
+            items: [
+              { label: "Panoramic X-ray", href: "/services/diaqnostika/panoram-rentgen" },
+              { label: "Cephalometric X-ray", href: "/services/diaqnostika/sefalometrik-rentgen" },
+              { label: "3D CBCT scan", href: "/services/diaqnostika/cbct" },
+            ],
           },
           {
             title: "Hygiene",
             items: [
-              "Professional cleaning",
-              "Air-flow polishing",
-              "Scaler cleaning",
+              { label: "Professional cleaning", href: "/services/gigiyena/professional-cleaning" },
+              { label: "Air-flow polishing", href: "/services/gigiyena/air-flow" },
+              { label: "Scaler cleaning", href: "/services/gigiyena/scaler-cleaning" },
             ],
           },
           {
             title: "Aesthetic dentistry",
-            items: ["At-home whitening", "In-clinic whitening", "Dental veneers"],
+            items: [
+              { label: "At-home whitening", href: "/services/estetik/ev-seraitinde-agardilma" },
+              { label: "In-clinic whitening", href: "/services/estetik/klinikada-agardilma" },
+              { label: "Dental veneers", href: "/services/estetik/dis-viniri" },
+            ],
           },
         ],
       },
@@ -622,6 +740,15 @@ export const content = {
         "Care in English and Russian",
       ],
       cta: "International consultation",
+    },
+    servicesPages: {
+      image: servicesPageImage,
+      detailsTitle: "Xidm\u0259t haqq\u0131nda",
+      breadcrumb: {
+        home: "Home",
+        services: "Services",
+      },
+      categories: servicesPageCategories,
     },
     statement: {
       text: "A smile is the most beautiful pattern, supported by healthy and aesthetic teeth.",
@@ -918,22 +1045,26 @@ export const content = {
           {
             title: "\u0414\u0438\u0430\u0433\u043d\u043e\u0441\u0442\u0438\u043a\u0430",
             items: [
-              "\u041f\u0430\u043d\u043e\u0440\u0430\u043c\u043d\u044b\u0439 \u0440\u0435\u043d\u0442\u0433\u0435\u043d",
-              "\u0426\u0435\u0444\u0430\u043b\u043e\u043c\u0435\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0440\u0435\u043d\u0442\u0433\u0435\u043d",
-              "3D \u0442\u043e\u043c\u043e\u0433\u0440\u0430\u0444\u0438\u044f (CBCT)",
+              { label: "\u041f\u0430\u043d\u043e\u0440\u0430\u043c\u043d\u044b\u0439 \u0440\u0435\u043d\u0442\u0433\u0435\u043d", href: "/services/diaqnostika/panoram-rentgen" },
+              { label: "\u0426\u0435\u0444\u0430\u043b\u043e\u043c\u0435\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0440\u0435\u043d\u0442\u0433\u0435\u043d", href: "/services/diaqnostika/sefalometrik-rentgen" },
+              { label: "3D \u0442\u043e\u043c\u043e\u0433\u0440\u0430\u0444\u0438\u044f (CBCT)", href: "/services/diaqnostika/cbct" },
             ],
           },
           {
             title: "\u0413\u0438\u0433\u0438\u0435\u043d\u0430",
             items: [
-              "\u041f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0447\u0438\u0441\u0442\u043a\u0430",
-              "Air-Flow \u0447\u0438\u0441\u0442\u043a\u0430",
-              "\u0427\u0438\u0441\u0442\u043a\u0430 \u0441\u043a\u0435\u0439\u043b\u0435\u0440\u043e\u043c",
+              { label: "\u041f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u0430\u044f \u0447\u0438\u0441\u0442\u043a\u0430", href: "/services/gigiyena/professional-cleaning" },
+              { label: "Air-Flow \u0447\u0438\u0441\u0442\u043a\u0430", href: "/services/gigiyena/air-flow" },
+              { label: "\u0427\u0438\u0441\u0442\u043a\u0430 \u0441\u043a\u0435\u0439\u043b\u0435\u0440\u043e\u043c", href: "/services/gigiyena/scaler-cleaning" },
             ],
           },
           {
             title: "\u042d\u0441\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u0442\u043e\u043c\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u044f",
-            items: ["\u0414\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u043e\u0442\u0431\u0435\u043b\u0438\u0432\u0430\u043d\u0438\u0435", "\u041a\u043b\u0438\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0442\u0431\u0435\u043b\u0438\u0432\u0430\u043d\u0438\u0435", "\u0412\u0438\u043d\u0438\u0440\u044b"],
+            items: [
+              { label: "\u0414\u043e\u043c\u0430\u0448\u043d\u0435\u0435 \u043e\u0442\u0431\u0435\u043b\u0438\u0432\u0430\u043d\u0438\u0435", href: "/services/estetik/ev-seraitinde-agardilma" },
+              { label: "\u041a\u043b\u0438\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043e\u0442\u0431\u0435\u043b\u0438\u0432\u0430\u043d\u0438\u0435", href: "/services/estetik/klinikada-agardilma" },
+              { label: "\u0412\u0438\u043d\u0438\u0440\u044b", href: "/services/estetik/dis-viniri" },
+            ],
           },
         ],
       },
@@ -1038,6 +1169,15 @@ export const content = {
         "\u0421\u0435\u0440\u0432\u0438\u0441 \u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u043e\u043c \u0438 \u0440\u0443\u0441\u0441\u043a\u043e\u043c",
       ],
       cta: "\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0438\u044f",
+    },
+    servicesPages: {
+      image: servicesPageImage,
+      detailsTitle: "Xidm\u0259t haqq\u0131nda",
+      breadcrumb: {
+        home: "\u0413\u043b\u0430\u0432\u043d\u0430\u044f",
+        services: "\u0423\u0441\u043b\u0443\u0433\u0438",
+      },
+      categories: servicesPageCategories,
     },
     statement: {
       text: "\u0423\u043b\u044b\u0431\u043a\u0430 \u2014 \u0441\u0430\u043c\u044b\u0439 \u043a\u0440\u0430\u0441\u0438\u0432\u044b\u0439 \u0443\u0437\u043e\u0440, \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0430\u043d\u043d\u044b\u0439 \u0437\u0434\u043e\u0440\u043e\u0432\u044b\u043c\u0438 \u0438 \u044d\u0441\u0442\u0435\u0442\u0438\u0447\u043d\u044b\u043c\u0438 \u0437\u0443\u0431\u0430\u043c\u0438.",

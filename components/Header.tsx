@@ -28,7 +28,7 @@ type HeaderProps = {
     items: ReadonlyArray<NavLink>;
   };
   servicesMenu?: {
-    groups: ReadonlyArray<{ title: string; items: ReadonlyArray<string> }>;
+    groups: ReadonlyArray<{ title: string; items: ReadonlyArray<NavLink> }>;
   };
   locale: Locale;
   onLocaleChange: (locale: Locale) => void;
@@ -150,11 +150,13 @@ export default function Header({
                               </h3>
                               <ul className="space-y-2 text-xs text-text-secondary">
                                 {group.items.map((item) => (
-                                  <li
-                                    key={item}
-                                    className="rounded-lg px-2 py-1 transition-colors hover:bg-surface/80 hover:text-text-primary"
-                                  >
-                                    {item}
+                                  <li key={item.href}>
+                                    <Link
+                                      href={item.href}
+                                      className="block rounded-lg px-2 py-1 transition-colors hover:bg-surface/80 hover:text-text-primary"
+                                    >
+                                      {item.label}
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
