@@ -9,7 +9,7 @@ type WhyUsProps = {
     label: string;
     title: string;
     image: { src: string; alt: string };
-    reasons: { title: string; description?: string }[];
+    reasons: ReadonlyArray<{ title: string; description?: string }>;
   };
 };
 

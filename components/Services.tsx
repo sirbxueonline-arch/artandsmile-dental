@@ -7,7 +7,7 @@ type ServicesProps = {
   content: {
     label: string;
     title: string;
-    items: { title: string; description: string }[];
+    items: ReadonlyArray<{ title: string; description: string }>;
   };
 };
 

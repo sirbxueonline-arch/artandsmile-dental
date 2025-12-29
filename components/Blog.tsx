@@ -14,7 +14,7 @@ type BlogProps = {
       previous: string;
       next: string;
     };
-    posts: { title: string; date: string; excerpt: string; image: string }[];
+    posts: ReadonlyArray<{ title: string; date: string; excerpt: string; image: string }>;
   };
 };
 

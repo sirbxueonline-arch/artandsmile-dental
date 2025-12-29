@@ -16,7 +16,7 @@ type NavLink = {
 };
 
 type HeaderProps = {
-  navLinks: NavLink[];
+  navLinks: ReadonlyArray<NavLink>;
   cta: string;
   tagline?: string;
   onTaglineClick?: () => void;
@@ -25,10 +25,10 @@ type HeaderProps = {
     language: string;
   };
   teamMenu?: {
-    items: { label: string; href: string }[];
+    items: ReadonlyArray<NavLink>;
   };
   servicesMenu?: {
-    groups: { title: string; items: string[] }[];
+    groups: ReadonlyArray<{ title: string; items: ReadonlyArray<string> }>;
   };
   locale: Locale;
   onLocaleChange: (locale: Locale) => void;

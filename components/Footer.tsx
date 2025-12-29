@@ -12,7 +12,7 @@ type NavLink = {
 };
 
 type FooterProps = {
-  navLinks: NavLink[];
+  navLinks: ReadonlyArray<NavLink>;
   content: {
     title: string;
     description: string;

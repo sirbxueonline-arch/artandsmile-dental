@@ -49,13 +49,13 @@ type HeroProps = {
     primaryCta?: string;
     secondaryCta?: string;
     scrollLabel?: string;
-    quickLinks?: { label: string; href: string }[];
+    quickLinks?: ReadonlyArray<{ label: string; href: string }>;
     image: {
       src: string;
       alt: string;
     };
   };
-  stats?: { value: number; suffix: string; label: string }[];
+  stats?: ReadonlyArray<{ value: number; suffix: string; label: string }>;
   locale?: Locale;
 };
 

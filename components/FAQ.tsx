@@ -8,7 +8,7 @@ type FAQProps = {
   content: {
     label: string;
     title: string;
-    items: { question: string; answer: string }[];
+    items: ReadonlyArray<{ question: string; answer: string }>;
   };
 };
 

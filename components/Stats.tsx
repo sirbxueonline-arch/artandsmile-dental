@@ -40,7 +40,7 @@ function Counter({
 }
 
 type StatsProps = {
-  stats: { value: number; suffix: string; label: string }[];
+  stats: ReadonlyArray<{ value: number; suffix: string; label: string }>;
   locale: Locale;
 };
 

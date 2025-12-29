@@ -25,7 +25,7 @@ type TeamProps = {
       facebook: string;
       linkedin: string;
     };
-    members: {
+    members: ReadonlyArray<{
       name: string;
       role: string;
       image: string;
@@ -34,7 +34,7 @@ type TeamProps = {
         facebook?: string;
         linkedin?: string;
       };
-    }[];
+    }>;
   };
 };
 

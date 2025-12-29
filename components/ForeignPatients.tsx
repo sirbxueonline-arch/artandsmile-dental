@@ -11,7 +11,7 @@ type ForeignPatientsProps = {
     label: string;
     title: string;
     description: string;
-    highlights: string[];
+    highlights: ReadonlyArray<string>;
     cta: string;
   };
 };

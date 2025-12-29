@@ -20,7 +20,7 @@ type StoriesProps = {
     title: string;
     openLabel: string;
     closeLabel: string;
-    stories: Story[];
+    stories: ReadonlyArray<Story>;
   };
 };
 
