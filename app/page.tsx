@@ -9,7 +9,6 @@ import WhyUs from "../components/WhyUs";
 import ForeignPatients from "../components/ForeignPatients";
 import Statement from "../components/Statement";
 import Team from "../components/Team";
-import Stories from "../components/Stories";
 import Blog from "../components/Blog";
 import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
@@ -42,7 +41,6 @@ export default function Home() {
         <ForeignPatients key={`foreign-${locale}`} content={copy.foreignPatients} />
         <Statement key={`statement-${locale}`} content={copy.statement} />
         <Team key={`team-${locale}`} content={copy.team} />
-        <Stories key={`stories-${locale}`} content={copy.stories} />
         <Blog key={`blog-${locale}`} content={copy.blog} />
         <FAQ key={`faq-${locale}`} content={copy.faq} />
         <Contact key={`contact-${locale}`} content={copy.contact} />

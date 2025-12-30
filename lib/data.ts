@@ -423,7 +423,6 @@ export const content = {
       scrollLabel: "A\u015fa\u011f\u0131",
       quickLinks: [
         { label: "Texnologiyalar", href: "#services" },
-        { label: "Hekay\u0259miz", href: "#stories" },
       ],
       image: {
         src: heroImage,
@@ -911,7 +910,6 @@ export const content = {
       scrollLabel: "Scroll",
       quickLinks: [
         { label: "Technologies", href: "#services" },
-        { label: "Our stories", href: "#stories" },
       ],
       image: {
         src: heroImage,
@@ -1385,7 +1383,6 @@ export const content = {
       scrollLabel: "\u0412\u043d\u0438\u0437",
       quickLinks: [
         { label: "\u0422\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438", href: "#services" },
-        { label: "\u041d\u0430\u0448\u0438 \u0438\u0441\u0442\u043e\u0440\u0438\u0438", href: "#stories" },
       ],
       image: {
         src: heroImage,
