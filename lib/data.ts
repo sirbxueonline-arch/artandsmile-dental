@@ -435,6 +435,52 @@ export const content = {
       { value: 4, suffix: "+", label: "m\u00fct\u0259x\u0259ssis h\u0259kim" },
       { value: 20000, suffix: "+", label: "u\u011furlu m\u00fcalic\u0259" },
     ],
+    videoStories: {
+      label: "Pasiyent r\u0259yl\u0259ri",
+      title: "Pasiyentl\u0259rimizin",
+      subtitle: "t\u0259cr\u00fcb\u0259 v\u0259 r\u0259yl\u0259ri",
+      description: "Pasiyent r\u0259yl\u0259ri v\u0259 t\u0259cr\u00fcb\u0259l\u0259ri bizim \u00fc\u00e7\u00fcn \u0259n d\u0259y\u0259rli g\u00f6st\u0259ricidir. H\u0259r bir r\u0259y bizi daha da inki\u015faf etdirm\u0259y\u0259 k\u00f6m\u0259k edir.",
+      openLabel: "Videonu a\u00e7",
+      closeLabel: "Videonu ba\u011fla",
+      items: [
+        {
+          src: "/brand/patient1.mp4",
+          label: "Pasiyent video 1",
+        },
+        {
+          src: "/brand/patient2.mp4",
+          label: "Pasiyent video 2",
+        },
+        {
+          src: "/brand/patient3.mp4",
+          label: "Pasiyent video 3",
+        },
+        {
+          src: "/brand/patient4.mp4",
+          label: "Pasiyent video 4",
+        },
+        {
+          src: "/brand/patient5.mp4",
+          label: "Pasiyent video 5",
+        },
+        {
+          src: "/brand/patient6.mp4",
+          label: "Pasiyent video 6",
+        },
+        {
+          src: "/brand/patient7.mp4",
+          label: "Pasiyent video 7",
+        },
+        {
+          src: "/brand/patient8.mp4",
+          label: "Pasiyent video 8",
+        },
+        {
+          src: "/brand/patient9.mp4",
+          label: "Pasiyent video 9",
+        },
+      ],
+    },
     services: {
       label: "Dental xidm\u0259tl\u0259r",
       title: "siz\u0259 t\u0259klif edirik",
@@ -877,6 +923,52 @@ export const content = {
       { value: 4, suffix: "+", label: "specialist doctors" },
       { value: 20000, suffix: "+", label: "successful treatments" },
     ],
+    videoStories: {
+      label: "Patient reviews",
+      title: "Our patients'",
+      subtitle: "experiences and opinions",
+      description: "Our patients' reviews and experiences are the most valuable indicators for us. Every review helps us improve even further.",
+      openLabel: "Open video",
+      closeLabel: "Close video",
+      items: [
+        {
+          src: "/brand/patient1.mp4",
+          label: "Patient video 1",
+        },
+        {
+          src: "/brand/patient2.mp4",
+          label: "Patient video 2",
+        },
+        {
+          src: "/brand/patient3.mp4",
+          label: "Patient video 3",
+        },
+        {
+          src: "/brand/patient4.mp4",
+          label: "Patient video 4",
+        },
+        {
+          src: "/brand/patient5.mp4",
+          label: "Patient video 5",
+        },
+        {
+          src: "/brand/patient6.mp4",
+          label: "Patient video 6",
+        },
+        {
+          src: "/brand/patient7.mp4",
+          label: "Patient video 7",
+        },
+        {
+          src: "/brand/patient8.mp4",
+          label: "Patient video 8",
+        },
+        {
+          src: "/brand/patient9.mp4",
+          label: "Patient video 9",
+        },
+      ],
+    },
     services: {
       label: "Dental services",
       title: "we offer you",
@@ -1305,6 +1397,52 @@ export const content = {
       { value: 4, suffix: "+", label: "\u0432\u0440\u0430\u0447\u0438-\u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442\u044b" },
       { value: 20000, suffix: "+", label: "\u0443\u0441\u043f\u0435\u0448\u043d\u044b\u0435 \u043b\u0435\u0447\u0435\u043d\u0438\u044f" },
     ],
+    videoStories: {
+      label: "\u041e\u0442\u0437\u044b\u0432\u044b \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u043e\u0432",
+      title: "\u041e\u0442\u0437\u044b\u0432\u044b \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u043e\u0432",
+      subtitle: "\u0438 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f",
+      description: "\u041e\u0442\u0437\u044b\u0432\u044b \u0438 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u044f \u043d\u0430\u0448\u0438\u0445 \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u043e\u0432 \u2014 \u0441\u0430\u043c\u044b\u0439 \u0446\u0435\u043d\u043d\u044b\u0439 \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u044c \u0434\u043b\u044f \u043d\u0430\u0441. \u041a\u0430\u0436\u0434\u044b\u0439 \u043e\u0442\u0437\u044b\u0432 \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u0442 \u043d\u0430\u043c \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c\u0441\u044f \u043b\u0443\u0447\u0448\u0435.",
+      openLabel: "\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u0432\u0438\u0434\u0435\u043e",
+      closeLabel: "\u0417\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0438\u0434\u0435\u043e",
+      items: [
+        {
+          src: "/brand/patient1.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 1",
+        },
+        {
+          src: "/brand/patient2.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 2",
+        },
+        {
+          src: "/brand/patient3.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 3",
+        },
+        {
+          src: "/brand/patient4.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 4",
+        },
+        {
+          src: "/brand/patient5.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 5",
+        },
+        {
+          src: "/brand/patient6.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 6",
+        },
+        {
+          src: "/brand/patient7.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 7",
+        },
+        {
+          src: "/brand/patient8.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 8",
+        },
+        {
+          src: "/brand/patient9.mp4",
+          label: "\u0412\u0438\u0434\u0435\u043e \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 9",
+        },
+      ],
+    },
     services: {
       label: "\u0421\u0442\u043e\u043c\u0430\u0442\u043e\u043b\u043e\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0443\u0441\u043b\u0443\u0433\u0438",
       title: "\u043c\u044b \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u043c \u0432\u0430\u043c",

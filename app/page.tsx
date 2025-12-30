@@ -3,6 +3,7 @@
 import useLocale from "../lib/useLocale";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import VideoStories from "../components/VideoStories";
 import Services from "../components/Services";
 import WhyUs from "../components/WhyUs";
 import ForeignPatients from "../components/ForeignPatients";
@@ -35,6 +36,7 @@ export default function Home() {
       />
       <main>
         <Hero key={`hero-${locale}`} content={copy.hero} stats={copy.stats} locale={locale} />
+        <VideoStories key={`videos-${locale}`} content={copy.videoStories} />
         <Services key={`services-${locale}`} content={copy.services} />
         <WhyUs key={`whyus-${locale}`} content={copy.whyUs} />
         <ForeignPatients key={`foreign-${locale}`} content={copy.foreignPatients} />
