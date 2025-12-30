@@ -73,11 +73,15 @@ export default function VideoStories({ content }: VideoStoriesProps) {
           </div>
           <motion.ul
             variants={container}
-            className="mt-10 flex gap-5 overflow-x-auto pb-4 sm:gap-6 lg:mt-12"
+            className="scrollbar-none mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 sm:gap-6 lg:mt-12"
             role="list"
           >
             {content.items.map((item) => (
-              <motion.li key={item.src} variants={fadeUp} className="shrink-0">
+              <motion.li
+                key={item.src}
+                variants={fadeUp}
+                className="shrink-0 snap-center"
+              >
                 <button
                   type="button"
                   onClick={() => setActive(item)}

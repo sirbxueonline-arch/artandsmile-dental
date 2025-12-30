@@ -27,11 +27,18 @@ body {
   color: rgb(var(--text-primary));
   font-family: var(--font-inter);
   letter-spacing: -0.01em;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--accent) / 0.6);
+  outline-offset: 3px;
 }
 
 ::selection {
@@ -56,5 +63,13 @@ img {
 
   .container-base {
     @apply mx-auto w-full max-w-[1320px] px-6 sm:px-8;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
   }
 }
