@@ -29,7 +29,7 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="az">
       <body className={`${inter.variable} ${manrope.variable} antialiased`}>
         {children}
       </body>

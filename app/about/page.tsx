@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import useLocale from "../../lib/useLocale";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -8,10 +8,10 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import FloatingContact from "../../components/FloatingContact";
 import { container, fadeUp, lineReveal } from "../../lib/animations";
-import { content, type Locale } from "../../lib/data";
+import { content } from "../../lib/data";
 
 export default function AboutPage() {
-  const [locale, setLocale] = useState<Locale>("az");
+  const [locale, setLocale] = useLocale();
   const copy = content[locale];
   const about = copy.aboutPage;
 

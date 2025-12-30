@@ -104,12 +104,49 @@ export default function Team({ content }: TeamProps) {
                         </p>
                       ) : null}
                     </div>
+                    {hasSocials ? (
+                      <div className="mt-4 flex gap-3 sm:hidden">
+                        {member.socials?.instagram && (
+                          <a
+                            href={member.socials.instagram}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`${content.socialLabels.instagram}: ${member.name}`}
+                            className="rounded-full border border-divider bg-surface p-2 text-text-primary"
+                          >
+                            <Instagram size={16} />
+                          </a>
+                        )}
+                        {member.socials?.facebook && (
+                          <a
+                            href={member.socials.facebook}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`${content.socialLabels.facebook}: ${member.name}`}
+                            className="rounded-full border border-divider bg-surface p-2 text-text-primary"
+                          >
+                            <Facebook size={16} />
+                          </a>
+                        )}
+                        {member.socials?.linkedin && (
+                          <a
+                            href={member.socials.linkedin}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`${content.socialLabels.linkedin}: ${member.name}`}
+                            className="rounded-full border border-divider bg-surface p-2 text-text-primary"
+                          >
+                            <Linkedin size={16} />
+                          </a>
+                        )}
+                      </div>
+                    ) : null}
                   </motion.div>
                   {hasSocials ? (
                     <motion.div
                       variants={overlayVariants}
                       transition={{ duration: 0.3 }}
-                      className="absolute inset-0 flex items-end justify-between rounded-3xl bg-text-primary/70 p-5"
+                      className="absolute inset-0 hidden items-end justify-between rounded-3xl bg-text-primary/70 p-5 sm:flex"
                     >
                       <div className="flex gap-3">
                         {member.socials?.instagram && (

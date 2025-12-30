@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import useLocale from "../../lib/useLocale";
 import Header from "../../components/Header";
 import Team from "../../components/Team";
 import Footer from "../../components/Footer";
 import FloatingContact from "../../components/FloatingContact";
-import { content, type Locale } from "../../lib/data";
+import { content } from "../../lib/data";
 
 export default function StaffPage() {
-  const [locale, setLocale] = useState<Locale>("az");
+  const [locale, setLocale] = useLocale();
   const copy = content[locale];
 
   return (

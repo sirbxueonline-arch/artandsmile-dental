@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import useLocale from "../lib/useLocale";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -14,10 +14,10 @@ import FAQ from "../components/FAQ";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import FloatingContact from "../components/FloatingContact";
-import { content, type Locale } from "../lib/data";
+import { content } from "../lib/data";
 
 export default function Home() {
-  const [locale, setLocale] = useState<Locale>("az");
+  const [locale, setLocale] = useLocale();
   const copy = content[locale];
 
   return (

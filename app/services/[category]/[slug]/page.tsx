@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import useLocale from "../../../../lib/useLocale";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -8,7 +8,7 @@ import Header from "../../../../components/Header";
 import Footer from "../../../../components/Footer";
 import FloatingContact from "../../../../components/FloatingContact";
 import { container, fadeUp } from "../../../../lib/animations";
-import { content, type Locale } from "../../../../lib/data";
+import { content } from "../../../../lib/data";
 
 type ServiceParams = {
   category: string;
@@ -16,7 +16,7 @@ type ServiceParams = {
 };
 
 export default function ServiceDetailPage({ params }: { params: ServiceParams }) {
-  const [locale, setLocale] = useState<Locale>("az");
+  const [locale, setLocale] = useLocale();
   const copy = content[locale];
   const servicesPages = copy.servicesPages;
   const categoryKey = params.category as keyof typeof servicesPages.categories;
@@ -40,7 +40,9 @@ export default function ServiceDetailPage({ params }: { params: ServiceParams })
         <main className="bg-bg-primary pt-24">
           <section className="pb-20">
             <div className="container-base">
-              <p className="text-sm text-text-secondary">Service not found.</p>
+              <p className="text-sm text-text-secondary">
+                {servicesPages.notFound}
+              </p>
             </div>
           </section>
         </main>

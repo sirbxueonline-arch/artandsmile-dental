@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FocusEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
@@ -48,6 +48,8 @@ export default function Header({
   const [open, setOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [languageOpen, setLanguageOpen] = useState(false);
+  const servicesLabel =
+    navLinks.find((link) => link.href.includes("#services"))?.label ?? "Services";
   const flagMap: Record<Locale, { src: string; alt: string }> = {
     az: { src: "/brand/AZ.png", alt: "Azerbaijan flag" },
     en: { src: "/brand/EN.png", alt: "United Kingdom flag" },
@@ -56,6 +58,12 @@ export default function Header({
   const handleLocaleChange = (nextLocale: Locale) => {
     onLocaleChange(nextLocale);
     setOpen(false);
+  };
+  const handleMenuBlur = (event: FocusEvent<HTMLDivElement>) => {
+    const nextTarget = event.relatedTarget as Node | null;
+    if (!event.currentTarget.contains(nextTarget)) {
+      setActiveMenu(null);
+    }
   };
 
   return (
@@ -116,10 +124,13 @@ export default function Header({
                   className="relative"
                   onMouseEnter={() => setActiveMenu(link.href)}
                   onMouseLeave={() => setActiveMenu(null)}
+                  onFocus={() => setActiveMenu(link.href)}
+                  onBlur={handleMenuBlur}
                 >
                   <Link
                     href={link.href}
                     aria-expanded={isOpen}
+                    aria-haspopup="menu"
                     className={`group relative flex items-center gap-1 whitespace-nowrap px-1 py-1 transition-colors duration-300 ${
                       isOpen ? "text-accent" : "hover:text-text-primary"
                     }`}
@@ -141,6 +152,7 @@ export default function Header({
                         exit={{ opacity: 0, y: 10, scale: 0.98 }}
                         transition={{ duration: 0.25, ease }}
                         className="absolute left-0 top-full z-50 mt-4 w-[min(760px,90vw)] rounded-[26px] border border-divider bg-bg-secondary/95 p-6 shadow-[0_30px_80px_rgb(var(--text-primary)/0.14)] backdrop-blur"
+                        role="menu"
                       >
                         <div className="grid gap-6 sm:grid-cols-3">
                           {servicesMenu.groups.map((group) => (
@@ -172,6 +184,7 @@ export default function Header({
                         exit={{ opacity: 0, y: 10, scale: 0.98 }}
                         transition={{ duration: 0.2, ease }}
                         className="absolute left-0 top-full z-50 mt-3 w-44 rounded-2xl border border-divider bg-surface p-2 shadow-[0_24px_60px_rgb(var(--text-primary)/0.12)]"
+                        role="menu"
                       >
                         <div className="space-y-1 text-sm text-text-secondary">
                           {teamMenu.items.map((item) => (
@@ -296,6 +309,35 @@ export default function Header({
                   {link.label}
                 </Link>
               ))}
+              {servicesMenu?.groups?.length ? (
+                <div className="space-y-3 pt-2">
+                  <p className="text-xs uppercase tracking-[0.2em] text-text-secondary">
+                    {servicesLabel}
+                  </p>
+                  {servicesMenu.groups.map((group) => (
+                    <details
+                      key={group.title}
+                      className="rounded-2xl border border-divider bg-surface px-4 py-3"
+                    >
+                      <summary className="cursor-pointer list-none text-sm font-semibold text-text-primary marker:text-accent">
+                        {group.title}
+                      </summary>
+                      <div className="mt-3 space-y-2 pl-1 text-sm text-text-secondary">
+                        {group.items.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className="block transition-colors hover:text-text-primary"
+                            onClick={() => setOpen(false)}
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              ) : null}
               {teamMenu?.items?.length
                 ? teamMenu.items.map((item) => (
                     <Link

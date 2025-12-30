@@ -9,6 +9,12 @@ type ContactProps = {
     label: string;
     title: string;
     description: string;
+    statusMessages: {
+      sending: string;
+      success: string;
+      error: string;
+      genericError: string;
+    };
     form: {
       nameLabel: string;
       namePlaceholder: string;
@@ -36,6 +42,7 @@ export default function Contact({ content }: ContactProps) {
     "idle"
   );
   const [statusMessage, setStatusMessage] = useState("");
+  const { statusMessages } = content;
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -58,18 +65,17 @@ export default function Contact({ content }: ContactProps) {
       });
 
       if (!response.ok) {
-        const data = await response.json().catch(() => ({}));
         setStatus("error");
-        setStatusMessage(data.error ?? "Something went wrong. Please try again.");
+        setStatusMessage(statusMessages.error);
         return;
       }
 
       event.currentTarget.reset();
       setStatus("success");
-      setStatusMessage("Message sent. We will reach out shortly.");
+      setStatusMessage(statusMessages.success);
     } catch (error) {
       setStatus("error");
-      setStatusMessage("Unable to send right now. Please try again.");
+      setStatusMessage(statusMessages.genericError);
     }
   };
 
@@ -160,7 +166,7 @@ export default function Contact({ content }: ContactProps) {
                 type="submit"
                 disabled={status === "sending"}
               >
-                {status === "sending" ? "Sending..." : content.form.cta}
+                {status === "sending" ? statusMessages.sending : content.form.cta}
               </motion.button>
               {statusMessage ? (
                 <p
